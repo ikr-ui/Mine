@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Regis | Portfolio</title>
+
+    
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f7f7f7;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    /* Navigation */
+    nav {
+        background-color: #222;
+        padding: 15px 0;
+    }
+
+    nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 18px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: #f0b429;
+    }
+
+    /* Home section */
+    .hero {
+        background-color: #eedce4;
+        padding: 75px 0;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        margin-bottom: 8px;
+    }
+
+    .hero p {
+        max-width: 650px;
+        margin: 12px auto;
+    }
+
+    .button {
+        display: inline-block;
+        background-color: #8b2424;
+        color: white;
+        padding: 10px 18px;
+        margin-top: 12px;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+
+    .button:hover {
+        background-color: #681919;
+    }
+
+    /* Sections */
+    section {
+        padding: 45px 0;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    /* About section */
+    .about-content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .about-text {
+        flex: 1;
+    }
+
+    .profile-photo {
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 8px;
+        background-color: #ddd;
+    }
+
+    /* Skills */
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .skills-list span {
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 10px 14px;
+        border-radius: 4px;
+    }
+
+    /* Projects */
+    .projects {
+        background-color: #eee;
+    }
+
+    .project-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+
+    .project-card {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .project-card h3 {
+        margin-top: 0;
+    }
+
+    .project-card a {
+        color: #8b2424;
+    }
+
+    /* Contact */
+    .contact-form {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .contact-form label {
+        display: block;
+        margin-top: 12px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #bbb;
+        border-radius: 4px;
+        font: inherit;
+    }
+
+    .contact-form button {
+        border: none;
+        cursor: pointer;
+        font: inherit;
+    }
+
+    .contact-details {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    footer a {
+        color: white;
+        margin: 0 8px;
+    }
+
+    /* Mobile layout */
+    @media (max-width: 700px) {
+        nav .container,
+        .about-content {
+            flex-direction: column;
+        }
+
+        nav ul {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 12px;
+        }
+
+        .project-list {
+            grid-template-columns: 1fr;
+        }
+
+        .hero h1 {
+            font-size: 30px;
+        }
+    }
+</style>
+
+
+</head>
+<body>
+
+    <!-- Navigation links -->
+    <nav>
+        <div class="container">
+            <div class="logo">Kevin Regis</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Hello, I'm Kevin Regis</h1>
+            <p><strong>Software Developer</strong> based in Kigali, Rwanda.</p>
+            <p>I build websites and simple web applications. I enjoy learning new tools and using technology to solve everyday problems.</p>
+            <a class="button" href="#contact">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>My name is Kevin Regis. I studied Computer Science, specialising in Software Engineering, at INES-Ruhengeri.</p>
+                    <p>I work with HTML, CSS, JavaScript, PHP and databases. I have also used Python, Java and Git while learning and building projects.</p>
+                    <p>I am interested in web development, solving problems and improving my skills through practical work.</p>
+                </div>
+
+                <!-- Put your photo in the same folder and name it profile.jpg -->
+                <img class="profile-photo" src="WhatsApp Image 2026-10-07 at 11.32.38 (1).JPEG" alt="Photo of Kevin Regis">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>React</span>
+                <span>Python</span>
+                <span>Java</span>
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+                <span>Git and GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project-card">
+                    <h3>HEXASHOP</h3>
+                    <p>An online clothing shop where users can browse clothes and view product details.</p>
+                    <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/Kevin-Regis">View my GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>University Management System</h3>
+                    <p>A web project for storing and managing student information.</p>
+                    <p><strong>Tools:</strong> HTML, CSS, PHP, MySQL</p>
+                    <a href="https://github.com/Kevin-Regis">View my GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Personal Portfolio</h3>
+                    <p>This website introduces me, lists my skills and shares some of my projects.</p>
+                    <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/Kevin-Regis">View my GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p style="text-align: center;">Have a question or an opportunity? You can contact me using the details below.</p>
+
+            <form class="contact-form" id="contactForm">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button class="button" type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-details">
+                <p>Email: <a href="mailto:ishemaryakareraregisog1@gmail.com">ishemaryakareraregisog1@gmail.com</a></p>
+                <p>Phone: <a href="tel:+250790251621">+250 790 251 621</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Kevin Regis | Kigali, Rwanda</p>
+            <a href="https://github.com/Kevin-Regis">GitHub</a>
+            <a href="https://www.linkedin.com/in/ishemaryakarera-kevin-regis-3608b03b1">LinkedIn</a>
+            <a href="mailto:ishemaryakareraregisog1@gmail.com">Email</a>
+        </div>
+    </footer>
+
+    <script>
+        // This form shows a message. It does not send email to a server.
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for your message. Please contact me by email.");
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
